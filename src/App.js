@@ -3,7 +3,7 @@ import './App.css';
 import Character from "./components/Character";
 import Nav from "./components/Nav";
 import axios from "axios";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 const HeaderStyled = styled.div`

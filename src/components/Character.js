@@ -1,7 +1,7 @@
 // Write your Character component here
 import React from "react";
 import CharCard from "./CharCard";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 const CharBlockStyled = styled.div`
@@ -18,7 +18,6 @@ const CharBlockStyled = styled.div`
     flex-wrap: wrap;
    
 `
-
 
 export default function charsDisplay(props) {
     const {charData} = props;

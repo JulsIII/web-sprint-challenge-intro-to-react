@@ -31,13 +31,13 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 -React is much like a game engine is to it's base language - they both take languages, in this case JS,HTML&CSS and coalesce them into a framework, more technically a liberary. 
 
-1. Describe component state.
+2. Describe component state.
 -A state is a current arrangments of arrtibutes and property values that end in a finite status or state. When states change the compents re-render and may modify things. 
 
-1. Describe props.
+3. Describe props.
 -Props are properties. They are used for passing data from one compoinent to another. 
 
-1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+4. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
 -Side effects use useEffect to triggers somthing after first render or every rander dependiong on the setting. It is a somthing that results in an observable change beside the return value of the calcualtion itself. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.

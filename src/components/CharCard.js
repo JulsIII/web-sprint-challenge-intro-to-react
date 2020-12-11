@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 
 const CardStyled = styled.div`
@@ -19,7 +19,6 @@ const CardStyled = styled.div`
 h3{
     margin-top:15px;
     margin-bottom:5px;
-    //border: 1px solid ${(pr) => pr.theme.primaryColor};
     display: flex;
     justify-content: left;
     font-family: 'Quantico', sans-serif;
@@ -27,7 +26,6 @@ h3{
 
 h4{
     margin:8px;
-    //border: 1px solid ${(pr) => pr.theme.primaryColor};
     display: flex;
     justify-content: left;
     font-family: 'Quantico', sans-serif;
@@ -35,7 +33,6 @@ h4{
 
 h5{
     margin:8px;
-    //border: 1px solid ${(pr) => pr.theme.primaryColor};
     display: flex;
     justify-content: left;
     font-family: 'Quantico', sans-serif;
