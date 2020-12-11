@@ -1,15 +1,14 @@
-// Write your Character component here
 import React from "react";
 import styled, { keyframes } from "styled-components";
 
-export default function charsDisplay(props) {
-    const {charBlock, charId} = props;
+export default function charsNav(props) {
+    const {chars} = props;
 // console.log("NAV", apod);
 return (
 
 <div>
-{charId}
+    <button>Prev</button>
+    <button>Next</button>
 </div>
-
     );
 }
