@@ -11,7 +11,7 @@ const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
   const [charData, setCharData] = useState([]);
-  const [currentCharId, setCurrentCharId] = useState('null');
+  //const [currentCharId, setCurrentCharId] = useState('null');
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
@@ -30,23 +30,19 @@ const App = () => {
         });
     };
     fetchChars();
-    // charBlock();
+    // charId();
   }, []);
 
   console.log(charData);
 
-  // const charBlock = (id) => {
+  // const charId = (id) => {
   //   setCurrentCharId(id);
   // }
 
   return (
       <div className="App">
       <h1 className="Header">Characters</h1>
-     {
-      charData.map((ch) => {
-        return <Character key={ch.id} charId={currentCharId}/>
-      })
-      }
+      <Character charData={charData}/>
       <Nav />
     </div>
   );
@@ -54,11 +50,9 @@ const App = () => {
 
 
 // {
-//   chars.map((cr) => {
-//     return <Character key={cr.id} />;
+//   charData.map((ch) => {
+//     return <Character key={ch.id} charId={currentCharId}/>
 //   })
-// }
-// charBlock={charBlock}
+//   }
 
-
-export default App;
+  export default App;

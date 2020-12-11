@@ -1,15 +1,21 @@
 // Write your Character component here
 import React from "react";
+import CharCard from "./CharCard";
 import styled, { keyframes } from "styled-components";
 
 export default function charsDisplay(props) {
-    const {charBlock, charId} = props;
-// console.log("NAV", apod);
+    const {charData} = props;
+
 return (
 
 <div>
-{charId}
+{
+charData.map((char) => {
+    return (
+        <CharCard key={char.id} char={char}/>
+    );
+})
+}
 </div>
-
     );
 }
