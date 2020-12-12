@@ -59,7 +59,7 @@ export default function Character(props) {
   
     return (
           <CardStyled>
-            <img src={char.image}></img>
+            <img src={char.image} alt='Profile'></img>
             <h3>Name: {char.name}</h3>
             <h4>Species: {char.species}</h4>
             <h4>Gender: {char.gender}</h4>

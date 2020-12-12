@@ -36,13 +36,10 @@ const NavStyled = styled.div`
 `;
 
 export default function charsNav(props) {
-    const {pageInfo} = props;
 
 return (
 
 <NavStyled>
-    {/* <button onClick={URL = 'pageInfo.prev'}>Prev</button>
-    <button onClick={URL = 'pageInfo.next'}>Next</button> */}
     <button>Prev</button>
     <button>Home</button>
     <button>Next</button>

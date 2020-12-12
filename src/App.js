@@ -19,7 +19,6 @@ const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
   const [charData, setCharData] = useState([]);
-  const [pageInfo, setPageInfo] = useState('null');
   // Fetch characters from the API in an effect hook. Remember, anytime you have a 
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
@@ -36,32 +35,16 @@ const App = () => {
           console.log(err);
         });
     };
-
-    const fetchPageInfo = () => {
-      axios
-        .get(`${URL}?api_key=${API_KEY}`)
-        .then((res) => {
-          setPageInfo(res.data.info);
-        })
-        .catch((err) => {
-          console.log(err);
-        });
-    };
-
     fetchChars();
-
-    fetchPageInfo();
-
   }, []);
 
   console.log(charData);
-  console.log(pageInfo);
 
   return (
       <HeaderStyled className="App">
       <h1>CHARACTERS</h1>
       <Character charData={charData}/>
-      <Nav pageInfo={pageInfo}/>
+      <Nav/>
     </HeaderStyled>
   );
 }
